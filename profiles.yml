@@ -1,0 +1,13 @@
+softasset_dbt:
+  target: dev
+  outputs:
+    dev:
+      type: duckdb
+      path: "{{ env_var('DBT_DUCKDB_PATH', 'softasset_dbt.duckdb') }}"
+      schema: softasset_sam_csv_final
+      threads: 4
+    prod:
+      type: duckdb
+      path: "{{ env_var('DBT_DUCKDB_PATH', 'softasset_dbt.duckdb') }}"
+      schema: softasset_sam_csv_final
+      threads: 4

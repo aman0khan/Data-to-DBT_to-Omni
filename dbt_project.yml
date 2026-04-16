@@ -2,7 +2,7 @@ name: 'softasset_dbt'
 version: '1.0.0'
 config-version: 2
 
-profile: 'default'
+profile: 'softasset_dbt'
 
 model-paths: ["models"]
 analysis-paths: ["analyses"]

@@ -3,3 +3,7 @@
 target/
 dbt_packages/
 logs/
+
+# DuckDB database files
+*.duckdb
+*.duckdb.wal
